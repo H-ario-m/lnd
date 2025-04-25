@@ -10,6 +10,10 @@ import (
 
 var allTestCases = []*lntest.TestCase{
 	{
+        name: "sweeper fee bumping",
+        test: testSweeperFeeBumping,
+        },
+	{
 		Name:     "update channel status",
 		TestFunc: testUpdateChanStatus,
 	},
